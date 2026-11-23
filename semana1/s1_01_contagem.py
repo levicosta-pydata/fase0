@@ -1,4 +1,4 @@
-#   --- S1_01 - Contagens e tabuada ---
+#   --- S1.01: Contagens e tabuada ---
 
 """
     --- Parte 1: Imprimir de 1 a 20 ---
@@ -23,3 +23,17 @@ i = 1
 while 2*i <= 50:
     print(2*i, end=', ' if 2*i < 50 else '\n')
     i += 1
+# ---------------------------------------------------------------------------------------------------------------------
+"""
+    --- Parte 3: Imprimir tabuada de um número (Exemplo: 7):
+
+    Invariante: 0 <= i <= 11.
+    Previsão: Imprimir a tabuada de um número n dado com operações de 0 a 10.
+    Custo: O(1), com 36 operações fixas.
+"""
+def tabuada(n):
+    i = 0
+    while i <= 10:
+        print(f'{n} x {i} = {n*i}')
+        i += 1
+tabuada(7)
